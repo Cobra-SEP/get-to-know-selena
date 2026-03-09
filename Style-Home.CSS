@@ -1,0 +1,466 @@
+/* Reset sederhana */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cinzel Decorative, serif;
+
+/* Navbar */
+.navbar {
+  background-color: #1f5232; /* warna modern gelap */
+  padding: 14px 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  height:50px;
+
+}
+
+p{
+  color:#ffffff;
+  font-family: Cinzel Decorative, serif;
+  font-size: 18px;
+  margin-left:30px;
+}
+
+/* Menu */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Item */
+.navbar ul li {
+  margin-right: 30px;
+
+}
+
+/* Link */
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+
+}
+
+/* Efek garis bawah modern */
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #4ed481;
+  transition: width 0.3s ease;
+}
+
+/* Hover */
+.navbar ul li a:hover {
+  color: #34e081;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+body{
+  background-color:#112e21;
+}
+
+
+.fixed-background-section {
+    background-image: url("download2.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 540px;
+}
+
+.content-wrapper {
+    display: flex;              /* Turns on Flexbox */
+    align-items: center;        /* Vertically centers image and text */
+    gap: 0px;                  /* Space between image and text */
+    max-width: 1170px;          /* Limits width on large screens */
+    margin: 0 auto;             /* Centers the wrapper */
+    margin-right: 30px;
+}
+
+.profile-img {
+    width: 280px;               /* Fixed width for consistency */
+    height: 370px;
+    object-fit: cover;          /* Ensures image doesn't stretch */
+    border-radius: 50%;         /* Makes it circular */
+    flex-shrink: 0;             /* Prevents image from shrinking */
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+h1{
+  color:#ffffff;
+  font-family: Tahoma, sans-serif;
+  margin-right: 175px;
+  margin-top:30px;
+  margin-bottom: 15px;
+}
+
+.text-box {
+  max-width: 900px;   /* controls how wide the text can go */
+  
+  text-align: left;   /* aligns the text inside to the left */
+  margin-right: 220px;
+  margin-left:-200px;
+  margin-bottom: -110px;
+}
+
+h5{
+  color:#ffffff;
+  font-family: Trebuchet MS, sans-serif;
+  text-align: center;
+  margin-left: 165px;   
+  padding-left: 165px;  
+  margin-top: 18px;
+  font-weight: lighter; 
+}
+
+.button-link {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 auto;
+    margin-left: 0px;
+    /* Prevents the link from expanding */
+    display: inline-block;
+}
+
+.button {
+  min-width: 200px;
+  padding: 0 30px;
+  height: 50px;
+  font-size: 16px;
+  color: #2c502d;
+  letter-spacing: 3px;
+  box-shadow: 0 5px 15px -10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.button {
+  display: block;
+  margin-left:677px;
+  margin-top: -90px;
+}
+
+.button span {
+  z-index: 1;
+  text-align: center;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  transition: all 0.5s ease;
+  background: #2c502d;
+}
+
+.button::before {
+  left: 0;
+  border-top-left-radius: 5px;
+  border-end-start-radius: 5px;
+}
+
+.button::after {
+  right: 30;
+  border-top-right-radius: 5px;
+  border-end-end-radius: 5px;
+}
+
+.button:hover {
+  transition: all 0.5s ease;
+  color: #79e090;
+}
+
+.button:hover::after,
+.button:hover::before {
+  width: 50%;
+}.button {
+  min-width: 200px;
+  padding: 0 30px;
+  height: 50px;
+  font-size: 16px;
+  color:#2c502d;
+  letter-spacing: 3px;
+  box-shadow: 0 5px 15px -10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.button span {
+  z-index: 1;
+  text-align: center;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  transition: all 0.5s ease;
+  background: #2c502d;
+}
+
+.button::before {
+  left: 0;
+  border-top-left-radius: 5px;
+  border-end-start-radius: 5px;
+}
+
+.button::after {
+  right: 0;
+  border-top-right-radius: 5px;
+  border-end-end-radius: 5px;
+}
+
+.button:hover {
+  transition: all 0.5s ease;
+  color: #79e090;
+}
+
+.button:hover::after,
+.button:hover::before {
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  justify-content: center; 
+  gap: 70px; 
+  margin-bottom: 180px;
+  margin-top: 40px;
+  height:100%;
+}
+
+.home {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 505px;
+
+img {
+    transition: transform 0.3s ease; 
+}
+
+img:hover {
+    transform: scale(1.1); /* Membesar 10% */
+}
+
+img {
+  max-width: 250px;
+  max-height: 500px;
+  border-radius:900px;
+  margin-left: 100px;
+  margin-top:70px;
+  text-align: left;
+}
+
+}
+
+.neon-line {
+  border: none;
+  height: 4px;
+  background: #ffffff; /* Cyan color */
+  box-shadow: 0 0 10px #94f7bc, 0 0 20px #94f7bc, 0 0 40px #94f7bc;
+}
+
+.profile {
+  min-height: 553px;
+  background-image: url("green forest.jpeg");
+  background-size: cover;
+ 
+img {
+    transition: transform 0.3s ease; 
+}
+
+img:hover {
+    transform: scale(1.1); /* Membesar 10% */
+}
+
+img {
+  max-width: 250px;
+  border-radius:15px;
+  margin-bottom: -100px;
+}
+
+  h1{
+  text-align: center;
+  margin-left:150px;
+   margin-top:0px;
+   padding-top: 75px;
+}
+
+.button {
+  min-width: 200px;
+  padding: 0 30px;
+  height: 50px;
+  font-size: 16px;
+  color: ##2c502d;
+  letter-spacing: 3px;
+  box-shadow: 0 5px 15px -10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.button {
+  margin-left:533px;
+  margin-top:-130px;
+}
+
+.button span {
+  z-index: 1;
+  text-align: center;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  transition: all 0.5s ease;
+  background: #2c502d;
+}
+
+.button::before {
+  left: 0;
+  border-top-left-radius: 5px;
+  border-end-start-radius: 5px;
+}
+
+.button::after {
+  right: 30;
+  border-top-right-radius: 5px;
+  border-end-end-radius: 5px;
+}
+
+.button:hover {
+  transition: all 0.5s ease;
+  color: #79e090;
+}
+
+.button:hover::after,
+.button:hover::before {
+  width: 50%;
+}.button {
+  min-width: 200px;
+  padding: 0 30px;
+  height: 50px;
+  font-size: 16px;
+  color:#2c502d;
+  letter-spacing: 3px;
+  box-shadow: 0 5px 15px -10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.button span {
+  z-index: 1;
+  text-align: center;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  transition: all 0.5s ease;
+  background: #2c502d;
+}
+
+.button::before {
+  left: 0;
+  border-top-left-radius: 5px;
+  border-end-start-radius: 5px;
+}
+
+.button::after {
+  right: 0;
+  border-top-right-radius: 5px;
+  border-end-end-radius: 5px;
+}
+
+.button:hover {
+  transition: all 0.5s ease;
+  color: #79e090;
+}
+
+.button:hover::after,
+.button:hover::before {
+  width: 50%;
+}
+
+}
+
+/* MEDIUM GLOW */
+.container img {
+box-shadow:
+0 0 8px #fff,
+0 0 15px #fff,
+0 0 20px #fff;
+}
+
+
+.container img:hover {
+box-shadow:
+0 0 12px #fff,
+0 0 20px #fff,
+0 0 30px #fff;
+}
+
